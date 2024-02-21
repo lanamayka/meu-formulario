@@ -73,6 +73,12 @@
               "Content-Type": "application/json",
             },
             body: JSON.stringify(dados),
+          }).then((response) =>{
+            if(respose.ok){
+              alert("Formulario enviado com sucesso!")
+            }else {
+              alert("Erro ao enviar usuario")
+            }
           });
         } catch (error) {
           console.log(error);
